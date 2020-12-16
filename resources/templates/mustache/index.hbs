@@ -1,0 +1,22 @@
+<html>
+<head>
+    <link rel="stylesheet" href="/static/semantic.min.css" />
+    <link rel="stylesheet" href="/static/colors.css" />
+</head>
+<body>
+<div class="ui container">
+    <div class="ui menu">
+        <a class="teal active item" href="/">git.tomus.fr</a>
+    </div>
+    <h1 class="ui header">Repositories</h1>
+    <div class="ui vertical menu">
+        {{#repositories}}
+        <a class="item" href="/{{name}}">
+            {{name}}
+            <div class="ui left pointing label {{language}}">{{language}}</div>
+        </a>
+        {{/repositories}}
+    </div>
+</div>
+</body>
+</html>
